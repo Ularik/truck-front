@@ -1,5 +1,5 @@
 export async function getData(titleSpare = null, is_popular = null, count = 10, offset = 0) {
-    const url = new URL('http://127.0.0.1:8000/api/truck/get-spares');
+    const url = new URL('/api/truck/get-spares');
     // Добавляем параметры, если они есть
     url.searchParams.set('count', count);
     url.searchParams.set('offset', offset);

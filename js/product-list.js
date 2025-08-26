@@ -49,7 +49,7 @@ async function fillPage(titleSpare = null, queryFilter = null, count = 10, offse
             const title = clone.querySelector('.product-title');
             const productPrice = clone.querySelector('.product-price');
 
-            img.src = `http://127.0.0.1:8000${product.photo}`;
+            img.src = product.photo;
             title.textContent = product.title;
             productPrice.textContent = `${product.price} сом`;
 
@@ -61,7 +61,7 @@ async function fillPage(titleSpare = null, queryFilter = null, count = 10, offse
                 const priceModal = modalWindow.querySelector('.price');
                 const inStockModal = modalWindow.querySelector('.in-stock');
 
-                imgModal.src = `http://127.0.0.1:8000${product.photo}`;
+                imgModal.src = product.photo;
                 titleModal.textContent = product.title;
                 priceModal.textContent = `${product.price} сом`;
                 console.log(product.count);
@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const titleSpare = params.get('titleSpare'); // вернёт "query параметры" или null
     let queryFilter = null;
 
-    const url = new URL('http://127.0.0.1:8000/api/truck/get-spares-count'); // url получения кол-ва товара для заполненпя пагинации
+    const url = new URL('/api/truck/get-spares-count'); // url получения кол-ва товара для заполненпя пагинации
     if (titleSpare !== null && titleSpare !== '') {
         url.searchParams.append('title', titleSpare);
     }

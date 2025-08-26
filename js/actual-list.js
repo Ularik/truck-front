@@ -17,7 +17,7 @@ async function fillActualSection() {
         const card = actualCardsList[i];
         const product = body[i];
 
-        card.querySelector('.card-img img').src = `http://127.0.0.1:8000${product.photo}`;
+        card.querySelector('.card-img img').src = product.photo;
         card.querySelector('.card-title').textContent = product.title;
         card.querySelector('.card-price').textContent = `${product.price} сом`;
         
@@ -27,7 +27,7 @@ async function fillActualSection() {
             const priceModal = modalWindow.querySelector('.price');
             const inStockModal = modalWindow.querySelector('.in-stock');
 
-            imgModal.src = `http://127.0.0.1:8000${product.photo}`;
+            imgModal.src = product.photo;
             titleModal.textContent = product.title;
             priceModal.textContent = `${product.price} сом`;
             console.log(product.count);
