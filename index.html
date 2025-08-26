@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-main">
+            <div class="logo-block">
+                <a href="/index.html" class="logo">
+                    <svg id="ic-logo" class="ic-logo" viewBox="50 50 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <polygon points="150,50 250,150 150,250 50,150" fill="none" stroke="#0c51ff" stroke-width="4" />
+                        <text x="95" y="145" font-family="Arial, sans-serif" font-size="45" fill="#000000"
+                            font-weight="bold">NUR-</text>
+                        <text x="85" y="170" font-family="Arial, sans-serif" font-size="30" fill="#000000"
+                            font-weight="bold">zapchasti</text>
+                    </svg>
+                </a>
+                <span class="logo-text">продажа запчастей</span>
+            </div>
+            <div class="address">
+                <h3>Адресс:</h3>
+                <b>г. Бишкек Кудайберген базар</b>
+            </div>
+            <a href="tel:+996550257798" class="call-btn">call-btn</a>
+        </div>
+    </header>
+
+    <nav class="nav-bar container">
+        <a class="backet" href="#">Корзина</a>
+        <div class="nav-list-block">
+            <button type="button" id="catalogBtn" class="catalog-btn">
+                <svg class="ic-burger">
+                    <use xlink:href="#ic-burger"></use>
+                </svg>
+                Каталог
+            </button>
+            <div style="height: 0px" class="catalog" id="catalog">
+                <ul>
+                    <li><a href="http://127.0.0.1:5500/catalog-list.html">Все запчасти</a></li>
+                    <li><a href="#">Каталог</a></li>
+                </ul>
+            </div>
+            <ul class="nav-list">
+                <li><a href="/about_us.html">О нас</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+
+            <form action="#" id="search-form">
+                <div class="search-input-block">
+                    <input id="title" name="title" class="search-input" type="text" placeholder="Поиск">
+                    <button class="search-btn" type="submit">поиск</button>
+                </div>
+            </form>
+        </div>
+    </nav>
+
+    <section class="current-section">
+        <div class="container current-section-content">
+            <h2 class="current-title">Актуальные запчасти</h2>
+            <div class="cards-block">
+                <a href="#" class="card">
+                    <div class="card-img">
+                        <img src="uploads/турбина shacman.jpeg" alt="">
+                    </div>
+                    <div class="card-text">
+                        <h4 class="card-title">Turbina howo</h4>
+                        <p>Произв: китай, алюминий</p>
+                        <h3 class="card-price">32000 сом</h3>
+                    </div>
+                    <div class="card-bottom">
+                        <span class="card-updated-date">10 января</span>
+                    </div>
+                </a>
+                <a href="#" class="card">
+                    <div class="card-img">
+                        <img src="uploads/турбина shacman.jpeg" alt="">
+                    </div>
+                    <div class="card-text">
+                        <h4 class="card-title">Turbina howo</h4>
+                        <p>Произв: китай, алюминий</p>
+                        <h3 class="card-price">32000 сом</h3>
+                    </div>
+                    <div class="card-bottom">
+                        <span class="card-updated-date">10 января</span>
+                    </div>
+                </a>
+                <a href="#" class="card">
+                    <div class="card-img">
+                        <img src="uploads/турбина shacman.jpeg" alt="">
+                    </div>
+                    <div class="card-text">
+                        <h4 class="card-title">Turbina howo</h4>
+                        <p>Произв: китай, алюминий</p>
+                        <h3 class="card-price">32000 сом</h3>
+                    </div>
+                    <div class="card-bottom">
+                        <span class="card-updated-date">10 января</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="category-block container">
+        <div class="category-text-block">
+            <h2 class="category-title">Категории товаров</h2>
+            <p class="category-text">Выберите категорию которая вас интересует. И перейдете ко всем товарам из этой категории.</p>
+            <div class="consultation-link-block">
+                <p>Не знаете что выбрать ?</p>
+                <a href="tel:+996550257798" class="consultation-link">Получить консультацию ></a>
+            </div>
+        </div>
+        <div class="category-cards">
+            <a href="#" class="category-card" data-category="турбины">
+                <p>Трубины и турбокомплекты</p>
+            </a>
+            <a href="#" class="category-card" data-category="тормоза">
+                <p>Тормоза и тормозные системы</p>
+            </a>
+            <a href="#" class="category-card" data-category="охлаждение">
+                <p>Охлаждение</p>
+            </a>
+            <a href="#" class="category-card" data-category="двигатель">
+                <p>Двигатель</p>
+            </a>
+            <a href="#" class="category-card" data-category="трансмиссия">
+                <p>Трансмиссия</p>
+            </a>
+            <a href="#" class="category-card" data-category="Выпускная система">
+                <p>Выпускная система</p>
+            </a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container footer-main">
+            <div id="contacts" class="footer-left-side">
+                <p>Тел/факс: 8(831) 225-00-55</p>
+                <p>Email: info@rtrf.ru</p>
+                <p>Нижний Новгород, ул. Торфяная, 35</p>
+            </div>
+            <div class="footer-right-side">
+                <p>2009 - 2021 © Rus - Trucks
+                    Информация на сайте не является публичной офертой и носит исключительно информационный характер
+                </p>
+                <p>Разработка R-top</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Modal window -->
+    <div id="modal-product-detail" class="modal-product-detail">
+        <div class="product-detail">
+            <a href="#" class="ic-close-window">
+                <svg class="ic-close" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                    stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="close-icon">
+                    <line x1="18" y1="6" x2="6" y2="18" />
+                    <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+            </a>
+            <div class="product-detail-img">
+                <img src="uploads/turbina_howo.webp" alt="turbo">
+            </div>
+            <div class="product-detail-content">
+                <h3>Turbina howo</h3>
+                <p class="price">25.000 сом</p>
+                <p>Произв: китай, алюминий</p>
+            </div>
+            <div class="product-detail-bottom">
+                <p class="in-stock">В наличии</p>
+                <div class="call-block">
+                    <a href="https://wa.me/996550257798?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5"
+                        target="_blank" rel="noopener" class="whatsapp" aria-label="Написать в WhatsApp"></a>
+                    <span>Позвонить: </span>
+                    <a href="tel:+996550257798" class="call-link">0550257798</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+
+        <symbol id="ic-logo" viewBox="50 50 200 200" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="150,50 250,150 150,250 50,150" fill="none" stroke="#0c51ff" stroke-width="4" />
+            <text x="95" y="145" font-family="Arial, sans-serif" font-size="45" fill="#000000"
+                font-weight="bold">NUR-</text>
+            <text x="85" y="170" font-family="Arial, sans-serif" font-size="30" fill="#000000"
+                font-weight="bold">zapchasti</text>
+        </symbol>
+
+        <symbol id="ic-burger" viewBox="0 0 18 14" fill="none">
+            <path
+                d="M0 1.21429C0 0.681725 0.402944 0.25 0.9 0.25H17.1C17.5971 0.25 18 0.681725 18 1.21429C18 1.74685 17.5971 2.17857 17.1 2.17857H0.9C0.402944 2.17857 0 1.74685 0 1.21429Z"
+                fill="white" />
+            <path
+                d="M0 7C0 6.46744 0.402944 6.03571 0.9 6.03571H17.1C17.5971 6.03571 18 6.46744 18 7C18 7.53256 17.5971 7.96429 17.1 7.96429H0.9C0.402944 7.96429 0 7.53256 0 7Z"
+                fill="white" />
+            <path
+                d="M0.9 11.8214C0.402944 11.8214 0 12.2532 0 12.7857C0 13.3183 0.402944 13.75 0.9 13.75H17.1C17.5971 13.75 18 13.3183 18 12.7857C18 12.2532 17.5971 11.8214 17.1 11.8214H0.9Z"
+                fill="white" />
+        </symbol>
+        <symbol id="ic-arrow-down" viewBox="0 0 19 23" fill="none">
+            <path
+                d="M8.70448 19.1691L0.829498 12.3602C0.390168 11.9803 0.390168 11.3644 0.829498 10.9846C1.26883 10.6047 1.98116 10.6047 2.42049 10.9846L8.37499 16.133V0.972684C8.37499 0.43548 8.87866 0 9.49997 0C10.1213 0 10.625 0.43548 10.625 0.972684V16.133L16.5795 10.9846C17.0188 10.6047 17.7312 10.6047 18.1705 10.9846C18.6098 11.3644 18.6098 11.9803 18.1705 12.3602L10.2955 19.1691C10.2695 19.1915 10.2415 19.2133 10.2131 19.2335C10.2044 19.2397 10.1954 19.2453 10.1864 19.2509C10.1819 19.2538 10.1774 19.2566 10.1729 19.2595C10.1569 19.2698 10.1413 19.2805 10.1247 19.2902C10.1128 19.297 10.1006 19.3032 10.0884 19.3094C10.0841 19.3116 10.0798 19.3137 10.0756 19.3159C10.0709 19.3183 10.0663 19.3207 10.0617 19.3232C10.0514 19.3286 10.041 19.3341 10.0303 19.339C10.0176 19.3449 10.0048 19.35 9.99184 19.3552C9.9876 19.3569 9.98335 19.3586 9.97912 19.3603C9.97499 19.362 9.97087 19.3637 9.96675 19.3655C9.95479 19.3705 9.94282 19.3754 9.9305 19.3799C9.91854 19.3841 9.9064 19.3878 9.89424 19.3915C9.8895 19.3929 9.88476 19.3943 9.88003 19.3958C9.86231 19.4013 9.84475 19.4072 9.82661 19.412C9.81448 19.4151 9.80218 19.4177 9.78989 19.4203C9.78509 19.4213 9.78029 19.4223 9.77551 19.4233C9.77085 19.4243 9.76621 19.4254 9.76157 19.4264C9.74776 19.4295 9.73395 19.4326 9.71982 19.4351C9.70499 19.4376 9.69006 19.4394 9.67514 19.4411C9.67017 19.4417 9.6652 19.4423 9.66023 19.4429C9.65477 19.4436 9.64934 19.4443 9.6439 19.4451C9.63301 19.4466 9.62211 19.4481 9.61103 19.4491C9.5372 19.4554 9.4628 19.4554 9.38897 19.4491C9.37825 19.4482 9.3677 19.4467 9.35716 19.4452C9.35137 19.4444 9.34558 19.4436 9.33977 19.4429C9.3348 19.4423 9.32983 19.4417 9.32486 19.4411C9.30993 19.4394 9.29501 19.4376 9.28018 19.4351C9.26605 19.4326 9.25225 19.4295 9.23844 19.4264C9.23379 19.4254 9.22915 19.4243 9.22449 19.4233C9.21982 19.4223 9.21514 19.4213 9.21047 19.4203C9.19805 19.4178 9.18565 19.4152 9.17339 19.412C9.1598 19.4084 9.14656 19.4042 9.1333 19.4C9.12886 19.3986 9.12442 19.3972 9.11997 19.3958C9.11579 19.3945 9.1116 19.3933 9.10742 19.392C9.0947 19.3882 9.082 19.3843 9.0695 19.3799C9.05718 19.3754 9.04521 19.3705 9.03324 19.3655C9.02913 19.3637 9.02501 19.362 9.02088 19.3603C9.00374 19.3534 8.9865 19.3468 8.96973 19.339C8.95861 19.3339 8.94789 19.3283 8.93716 19.3226C8.93293 19.3204 8.92869 19.3181 8.92443 19.3159C8.92016 19.3137 8.91588 19.3116 8.9116 19.3094C8.89939 19.3032 8.88721 19.297 8.87533 19.2902C8.86287 19.283 8.85095 19.2751 8.83902 19.2673C8.83505 19.2647 8.83108 19.2621 8.82708 19.2595C8.82238 19.2564 8.81763 19.2535 8.81289 19.2505C8.80412 19.245 8.79535 19.2395 8.7869 19.2335C8.75848 19.2133 8.73047 19.1915 8.70448 19.1691Z"
+                fill="black" />
+            <path
+                d="M1.62498 21.1762H17.375C17.9963 21.1762 18.5 21.5845 18.5 22.0881C18.5 22.5917 17.9963 23 17.375 23H1.62498C1.00367 23 0.5 22.5917 0.5 22.0881C0.5 21.5845 1.00367 21.1762 1.62498 21.1762Z"
+                fill="black" />
+        </symbol>
+    </svg>
+
+    <script type="module" src="js/actual-list.js"></script>
+    <script src="js/catalog.js"></script>
+    <script src="js/category-sparec.js"></script>
+    <script src="js/search-form.js"></script>
+</body>
+
+</html>
