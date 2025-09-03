@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const titleSpare = params.get('titleSpare'); // вернёт "query параметры" или null
     let queryFilter = null;
 
-    const url = new URL('/api/truck/get-spares-count'); // url получения кол-ва товара для заполненпя пагинации
+    const url = new URL('/api/truck/get-spares-count', window.location.origin); // url получения кол-ва товара для заполненпя пагинации
     if (titleSpare !== null && titleSpare !== '') {
         url.searchParams.append('title', titleSpare);
     }
